@@ -1,0 +1,23 @@
+
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <b>Sales price:</b>
+  <%= @transaction.sales_price %>
+</p>
+
+<p>
+  <b>Customer:</b>
+  <%= @transaction.customer_id %>
+</p>
+
+<p>
+  <b>Work:</b>
+  <%= @transaction.work_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>

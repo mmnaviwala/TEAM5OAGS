@@ -1,0 +1,31 @@
+# == Schema Information
+#
+# Table name: transactions
+#
+#  id          :integer          not null, primary key
+#  sales_price :float
+#  customer_id :integer          not null
+#  work_id     :integer          not null
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  acquisition_price: 1.5
+  asking_price: 1.5
+  date_acquired: 2013-04-20
+  date_sold: 2013-04-20
+  sales_price: 1.5
+  customer_id: 1
+  work_id: 1
+
+two:
+  acquisition_price: 1.5
+  asking_price: 1.5
+  date_acquired: 2013-04-20
+  date_sold: 2013-04-20
+  sales_price: 1.5
+  customer_id: 1
+  work_id: 1

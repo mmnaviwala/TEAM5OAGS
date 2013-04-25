@@ -1,0 +1,63 @@
+=====================
+About TEAM5OAGS
+=====================
+
+
+TEAM5OAGS is an art gallery website that was developed by a team of eight members for the Spring 2013 software engineering course at the University of Houston. This website has been designed and developed in accordance with the REST and MVC architecture patterns as well as software engineering principles. The team utilized Ruby on Rails and MySQL as the front-end and back-end technologies for the website, respectively.
+
+Members of the "development" team are listed below:
+
+Ryan Lee - Team Leader
+
+Christopher Cruz - SQA
+
+Muhammad Naviwala - SQA
+
+Gabriel Ohlson - DBA
+
+Joel Loucks - DBA
+
+Matthew Liang - Team Member
+
+==================================================
+Rails Generate Commands for TEAM5OAGS' Scaffolding
+==================================================
+
+rails g scaffold User first_name:string last_name:string street:string city:string zip:integer state:string area_code:integer phone_number:integer country:string password_digest:string remember_token:string username:string email:string type:string
+
+rails g scaffold Artist date_of_birth:date date_deceased:date 
+
+rails g scaffold Customer 
+
+rails g scaffold Dba 
+
+rails g scaffold Cso
+
+rails g scaffold Employee
+
+rails g scaffold Testimonial content:text customer_id:integer
+
+rails g scaffold Transaction acquisition_price:float asking_price:float date_acquired:date date_sold:date sales_price:float customer_id:integer work_id:integer
+
+rails g scaffold Work title:string medium:string description:text copy:string artist_id:integer img_url:string
+
+rails g scaffold Owner
+
+
+==================================================
+Rails Generate Commands for TEAM5OAGS' Controllers
+==================================================
+rails g controller static_pages home about chat testimonials gallery
+
+rails g controller Reports customer_artist_preference past_purchase past_purchase_artwork_location artist_works speed_of_sale
+
+rails g controller Sessions new create destroy
+
+
+
+
+=================================================
+Rails Generate Commands for TEAM5OAGS' Migrations
+=================================================
+
+rails g migration add_username_uniqueness_index

@@ -1,0 +1,13 @@
+
+
+<p id="notice"><%= notice %></p>
+
+
+<%= link_to 'Edit Account', edit_customer_path(@customer) %><br />
+
+  <b>Content:</b>
+<%= form_for(@customer) do |f| %>
+	<p>
+  		<%= @customer.testimonials %>
+	</p>
+<% end %>

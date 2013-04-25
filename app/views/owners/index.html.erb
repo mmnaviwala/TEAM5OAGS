@@ -1,0 +1,45 @@
+
+
+<h1>Listing Owners</h1>
+
+<table class = "table table-bordered table-striped">
+  <tr>
+  	<th>Username</th>
+  	<th>Email</th>
+  	<th>First Name</th>
+	<th>Last Name</th>
+	<th>Street</th>
+	<th>City</th>
+	<th>State</th>
+	<th>Zip</th>
+	<th>Country</th>
+	<th>Phone Number</th>
+	<th>Show</th>
+	<th>Edit</th>
+	<th>Destroy</th>
+
+  </tr>
+
+<%  @owners.each do |owner| %>
+  <tr>
+	<td><%= owner.username %></td>
+	<td><%= owner.email %></td> 
+	<td><%= owner.first_name %></td>     
+	<td><%= owner.last_name %></td>  
+	<td><%= owner.street %></td>  
+	<td><%= owner.city %></td>
+	<td><%= owner.state %></td>    
+	<td><%= owner.zip %></td>  
+	<td><%= owner.country %></td>  
+	<td>(<%= owner.area_code %>) <%= owner.phone_number %></td>
+		
+    <td><%= link_to 'Show', owner %></td>
+    <td><%= link_to 'Edit', edit_owner_path(owner) %></td>
+    <td><%= link_to 'Destroy', owner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Owner', new_owner_path %>

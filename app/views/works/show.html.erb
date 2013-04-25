@@ -1,0 +1,57 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @work.title %>
+</p>
+
+<p>
+  <b>Medium:</b>
+  <%= @work.medium %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @work.description %>
+</p>
+
+<p>
+  <b>Copy:</b>
+  <%= @work.copy %>
+</p>
+
+<p>
+  <b>Artist:</b>
+  <%= @work.artist_id %>
+</p>
+
+<p>
+  <b>Img url:</b>
+  <%= @work.img_url %>
+</p>
+
+<p>
+  <b>Acquisition price:</b>
+  <%= @work.acquisition_price %>
+</p>
+
+<p>
+  <b>Asking price:</b>
+  <%= @work.asking_price %>
+</p>
+
+<p>
+  <b>Date acquired:</b>
+  <%= @work.date_acquired %>
+</p>
+
+<p>
+  <b>Date sold:</b>
+  <%= @work.date_sold %>
+</p>
+
+
+<%= link_to 'Edit', edit_work_path(@work) %> |
+<%= link_to 'Back', works_path %>

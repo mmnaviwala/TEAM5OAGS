@@ -1,0 +1,25 @@
+
+
+<h1>Speed of Sale Report</h1>
+
+
+  <div class="row" >
+    <div class="span6 offset3">
+	  <div class="actions">
+		  <%= form_tag reports_speed_of_sale_path, method: 'get' do %> 
+		  	<%# text_field_tag :artist_id, params[:artist_id] %>
+			
+			<%= collection_select(@artist_id, :artist_id, Artist.all, :id, :id) %>
+
+		  	<%= submit_tag "Submit!", :name => nil , class: "btn btn-large btn-primary" %>
+		  <% end %>
+	  </div>
+  </div>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+
+
+<h1>Artists List</h1>
+
+<table class = "table table-bordered table-striped">
+  <tr>
+	<%if is_dba?%>  
+		<th>Username</th>
+	<% end %>	
+	<th>Email</th>
+	<th>First Name</th>
+  	<th>Last Name</th>
+  	<th>Street</th>
+  	<th>City</th>
+  	<th>State</th>
+  	<th>Zip</th>
+  	<th>Country</th>
+  	<th>Phone Number</th>
+    <th>Date of birth</th>
+    <th>Date deceased</th>
+	
+		<%if is_dba?%>
+			<th>Show</th>
+			<th>Edit</th>
+			<th>Destroy</th>
+		<% end %>
+	
+	
+  </tr>
+
+<% @artists.each do |artist| %>
+  <tr>
+	<%if is_dba?%>    
+	  	<td><%= artist.username %></td>
+	<% end %>
+  	<td><%= artist.email %></td> 
+  	<td><%= artist.first_name %></td>     
+  	<td><%= artist.last_name %></td>  
+  	<td><%= artist.street %></td>  
+  	<td><%= artist.city %></td>
+  	<td><%= artist.state %></td>    
+  	<td><%= artist.zip %></td>  
+  	<td><%= artist.country %></td>  
+  	<td>(<%= artist.area_code %>) <%= artist.phone_number %></td>
+	<td><%#= artist.date_of_birth %></td>
+	<td><%#= artist.date_deceased %></td> 
+	
+	
+	<%if is_dba?%>
+	    <td><%= link_to 'Show', artist %></td>
+	    <td><%= link_to 'Edit', edit_artist_path(artist) %></td>
+	    <td><%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<% end %>	
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Artist', new_artist_path %>

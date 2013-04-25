@@ -1,0 +1,39 @@
+
+
+<h1>Testimonials</h1>
+
+<div class="row" >
+  <div class="span6 offset3">
+  <div class="field">
+	  <%= form_tag testimonials_path, :method => 'get' do %>
+	  	<div class="field">
+	  		<%= text_field_tag :search, params[:search], 			:placeholder => "Search for a Testimonial..."%>
+		</div>
+	  	<%= submit_tag "Search", :name => nil , class: "btn btn-large btn-primary"%>
+		
+	  <% end %>
+  </div>
+</div>
+</div>
+
+  
+<table class = "table table-bordered table-striped">
+	<tr>
+		<th>Customer Name </th>
+		<th>Testimonial</th>
+	</tr>
+	<% @testimonials.each do |testimonial| %>
+  	<tr>
+		<td>
+			<%= testimonial.customer.first_name %> 
+			<%= testimonial.customer.last_name %>
+		</td>   
+  		<td>
+			<%= testimonial.content %>
+		</td> 
+	</tr>
+		<% end %>
+</table>
+<br/>
+
+<%= link_to 'New Testimonial', new_testimonial_path %>

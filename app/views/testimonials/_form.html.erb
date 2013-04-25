@@ -1,0 +1,33 @@
+
+
+<%= form_for(@testimonial) do |f| %>
+  <% if @testimonial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@testimonial.errors.count, "error") %> prohibited this testimonial from being saved:</h2>
+
+      <ul>
+      <% @testimonial.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="span6 offset3">
+<div class="field" style="display: none;">
+		  <p>Customer</p><br />
+		  <%= f.collection_select :customer_id, Customer.find(:all), 			:id, :first_name, :selected => @current_user.id %> 
+		  
+	  </div>
+	  
+	  <div class="field">
+	    <%= f.label :content %>
+		<%= f.text_area :content %>
+	  </div>
+  
+	  <div class="actions">
+	    <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+	  </div>
+  </div>
+</div>
+<% end %>

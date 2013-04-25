@@ -1,0 +1,27 @@
+
+
+<h1>Past Purchases for <%= @customer.last_name %>, <%= @customer.first_name %> </h1>
+<table class = "table table-bordered table-striped">
+	<tr>
+		<th>Date Acquired</th>
+		<th>Acquisition Price</th>
+		<th>Asking Price</th>
+		<th>Sales Price</th>
+		<th>Date Sold</th>
+		<th>Work ID</th>
+		<th>Title</th>
+		<th>Artist</th>
+	</tr>
+	<% @transaction.each do |k| %>
+	<tr>
+		<td><%= k.work.date_acquired %></td>
+		<td><%= k.work.acquisition_price %></td>
+		<td><%= k.work.asking_price %></td>
+		<td><%= k.sales_price %></td>
+		<td><%= k.work.date_sold %></td>
+		<td><%= k.work_id %></td>
+		<td><%= k.work.title %></td>
+		<td><%= k.work.artist.last_name %>, <%= k.work.artist.first_name %></td>
+	</tr>
+	<% end %>
+</table>

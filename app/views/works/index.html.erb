@@ -1,0 +1,59 @@
+
+<h1>Artwork</h1>
+
+<table class = "table table-bordered table-striped">
+  <tr>
+	<th>Artist</th>
+    <th>Title</th>
+    <th>Medium</th>
+    <th>Description</th>
+    <th>Copy</th>
+	
+	<% if is_employee? || is_owner? %>
+		<th>Acquisition price</th>
+	<% end %>
+    <th>Asking price</th>
+    <th>Date acquired</th>
+	
+    
+	
+	<% if is_owner? || is_employee? %>
+    <th>Date sold</th>
+    <th>Img url</th>
+	    <th>Show</th>
+	    <th>Edit</th>
+	    <th>Destroy</th>
+	<% end %>
+	
+  </tr>
+
+<% @works.each do |work| %>
+  <tr>
+    <td><%= work.artist_id%></td>
+    <td><%= work.title %></td>
+    <td><%= work.medium %></td>
+    <td><%= work.description %></td>
+    <td><%= work.copy %></td>
+    <td><%= work.acquisition_price %></td>
+
+	<% if is_employee? || is_owner? %>
+		<td><%= work.asking_price %></td>
+	<% end %>
+    <td><%= work.date_acquired %></td>
+	
+	<% if is_owner? || is_employee? %>
+    	<td><%= work.date_sold %></td>
+		<td><%= work.img_url %></td>
+	    <td><%= link_to 'Show', work %></td>
+	    <td><%= link_to 'Edit', edit_work_path(work) %></td>
+	    <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<% if is_owner? || is_employee?%>
+	<%= link_to 'New Work', new_work_path %>
+<% end %>

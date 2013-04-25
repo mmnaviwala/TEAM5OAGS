@@ -1,0 +1,18 @@
+
+
+<h1>Past Purchases Artwork Location for</h1>
+<h1><%= @customer.last_name.titleize %>, <%= @customer.first_name.titleize %></h1>
+<table class = "table table-bordered table-striped">
+	<tr>
+		<th>Artist Name</th>
+		<th>Nationality</th>
+		<th>Date Sold</th>
+	</tr>
+	<% @transactions.each do |k| %>
+	<tr>
+		<td><%= k.work.artist.last_name %>, <%= k.work.artist.first_name %></td>
+		<td><%= k.work.artist.country %></td>
+		<td><%= k.work.date_sold %></td>
+	</tr>
+	<% end %>
+</table>

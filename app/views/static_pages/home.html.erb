@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel Template</title>
+	<link href="bootstrap.css" rel="stylesheet">
+	<link href="bootstrap-responsive.css" rel="stylesheet">
+	<link href="custom.css" rel="stylesheet">
+</head>
+<body>
+	<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+			<a href = "/gallery">
+          <center><%= image_tag("dali1.jpg")%></center></a>
+          <div class="container">
+            <div class="carousel-caption">
+
+              <h1 style="color:white">The Persistence of Memory</h1>
+              <p class="lead">Art by: Salvador Dalí</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+			<a href = "/gallery">
+          <center><%= image_tag("picasso1.jpg") %></center></a>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 style="color:white">The Kiss</h1>
+              <p class="lead">Art by: Pablo Picasso</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+			<a href = "/gallery">
+          <center><%= image_tag("davinci1.jpg") %></center></a>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 style="color:white">Vitruvian Man</h1>
+              <p class="lead">Art by: Leonardo da Vinci</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+<div class="row">
+	<div class="row">
+	<div class="span4">
+		<h2>Our Mission</h2>
+		<p>TEAM 5 is an online art gallery dedicated to 100% customer satisfaction through providing customers with the finest
+contemporary artworks produced by world-renowned artists and art institutions.</p>
+	</div>
+	
+	<div class="span4">
+		<h2>Our Products</h2>
+	<p>Our products focus on contemporary European and North American fine artworks including lithographs, high-quality
+prints, original paintings, and photographs. Our gallery includes works from famous artists such as Wassily
+Kandinsky, Henri Matisse, Mark Tobey, Morris Graves, Guy Anderson, and Paul Horiuchi. Our gallery also acquires
+artworks from institutions such as the Northwest School of Art and the Northwest Maritime School. Take a look at all
+we have to offer in our gallery pages and see for yourself!  Whatever artist preferences you have, you can count on
+TEAM 5 to fulfill all your artwork needs!</p>
+	</div>
+	
+	<div class="span4">
+		<h2>Our History</h2>
+	<p>TEAM 5 was founded in 2013 in Houston, Texas at the University of Houston. Originally a student-based organization
+promoting student artwork pieces at the University of Houston School of Art, TEAM 5 eventually progressed and became
+a national retailer in the selling and acquisition of famous artworks.</p>
+	</div>
+</div>
+
+
+</body>
+</html>

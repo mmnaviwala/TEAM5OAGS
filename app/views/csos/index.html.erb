@@ -1,0 +1,45 @@
+
+
+<h1>Customer Service Operators</h1>
+
+<table class = "table table-bordered table-striped">
+  <tr>
+    <th>Username</th>
+    <th>Email</th>
+    <th>First Name</th>
+  	<th>Last Name</th>
+  	<th>Street</th>
+  	<th>City</th>
+  	<th>State</th>
+  	<th>Zip</th>
+  	<th>Country</th>
+  	<th>Phone Number</th>
+	<th>Show</th>
+	<th>Edit</th>
+	<th>Destroy</th>
+    
+  </tr>
+
+<% @csos.each do |cso| %>
+  <tr>
+  	<td><%= cso.username %></td>
+  	<td><%= cso.email %></td> 
+  	<td><%= cso.first_name %></td>     
+  	<td><%= cso.last_name %></td>  
+  	<td><%= cso.street %></td>  
+  	<td><%= cso.city %></td>
+  	<td><%= cso.state %></td>    
+  	<td><%= cso.zip %></td>  
+  	<td><%= cso.country %></td>  
+  	<td>(<%= cso.area_code %>) <%= cso.phone_number %></td>
+	
+    <td><%= link_to 'Show', cso %></td>
+    <td><%= link_to 'Edit', edit_cso_path(cso) %></td>
+    <td><%= link_to 'Destroy', cso, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cso', new_cso_path %>

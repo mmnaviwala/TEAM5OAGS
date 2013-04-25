@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: testimonials
+#
+#  id          :integer          not null, primary key
+#  content     :text             not null
+#  customer_id :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  content: MyText
+  customer_id: 1
+
+two:
+  content: MyText
+  customer_id: 1

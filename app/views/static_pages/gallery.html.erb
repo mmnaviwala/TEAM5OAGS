@@ -1,0 +1,25 @@
+<h1>Gallery</h1>
+
+<ul class="thumbnails">
+  <% @works.each do |work| %>
+      <li class="span4">
+        <div class="thumbnail">
+          <div class="thumbnail_container">
+            <%= image_tag("#{work.title}.png", :alt => "#{work.title}", :class => 'magnify') %>
+          </div>
+          <h4><%= work.title %></h4>
+          <p>Medium: <%= work.medium %></p>
+          <p>Stock:
+            <% if work.date_sold.nil? %>
+              Out of stock
+            <% else %>
+              In stock
+            <% end %>
+          </p>
+          <p>Price: $<%= work.asking_price %></p>
+          <%= link_to 'More', show_customer_work_path(work), class: 'btn' %>
+        </div>
+      </li>
+  <% end %>
+
+</ul>

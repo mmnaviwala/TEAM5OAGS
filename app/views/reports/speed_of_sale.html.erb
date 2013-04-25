@@ -1,0 +1,35 @@
+<h1>Speed of Sale Report!</h1>
+
+<div class="row" >
+  <div class="span6 offset3">
+ 	 <div class="field">
+	  
+<table class = "table table-bordered table-striped">
+	<tr>
+		<th>Work ID</th>
+		<th>Artist ID</th>
+		<th>Date Acquired</th>
+		<th>Date Sold</th>
+		<th>Asking Price</th>
+		<th>Sales Price</th>
+		<th>Profit</th>
+		<th>Speed Margin</th>
+	</tr>
+	<% @works.each do |k| %>
+	<tr>
+		<td><%= k.id %></td>
+		<td><%= k.artist_id %></td>
+		<td><%= k.date_acquired %></td>
+		<td><%= k.date_sold %></td>
+		<td><%= k.asking_price%></td>
+		<td><% t = Transaction.find_by_work_id(k.id) %>			
+			$<%= t.sales_price %>	
+		</td>
+		<td>$<%= t.sales_price - k.acquisition_price %></td>
+		<td><%= distance_of_time_in_words(Date.strptime(k.date_sold, '%m/%d/%Y'), Date.strptime(k.date_acquired, '%m/%d/%Y')) %></td>
+	</tr>
+	<% end %>
+			</table>
+		</div>
+	</div>
+</div>

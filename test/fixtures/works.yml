@@ -1,0 +1,36 @@
+# == Schema Information
+#
+# Table name: works
+#
+#  id                :integer          not null, primary key
+#  title             :string(255)      not null
+#  medium            :string(255)      not null
+#  description       :text             not null
+#  copy              :string(255)      not null
+#  artist_id         :integer          not null
+#  img_url           :string(255)
+#  acquisition_price :float            not null
+#  asking_price      :float
+#  date_acquired     :date             not null
+#  date_sold         :date
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  medium: MyString
+  description: MyText
+  copy: MyString
+  artist_id: 1
+  img_url: MyString
+
+two:
+  title: MyString
+  medium: MyString
+  description: MyText
+  copy: MyString
+  artist_id: 1
+  img_url: MyString

@@ -1,0 +1,30 @@
+	<h1><%= @artists.first.first_name.titleize %> <%= @artists.first.last_name.titleize %></h1>
+<div class="row" >
+  <div class="span6 offset3">
+  <div class="field">
+
+		<% unless @artists.blank?  %>
+	
+			<table class = "table table-bordered table-striped">
+				<tr>
+					<th>Title</th>
+					<th>Medium</th>
+					<th>Description</th>
+				</tr>
+				<% @artists.first.works.each do |k| %>
+				<tr>
+					<td><%= link_to k.title, show_customer_work_path(k) %></td>
+					<td><%= k.medium %></td>
+					<td><%= k.description %></td>
+				</tr>
+				<% end %>
+			</table>
+		<% else %>
+		<h2>Artist not found!<h2>
+		<% end %>
+
+
+
+	  </div>
+	</div>
+</div>

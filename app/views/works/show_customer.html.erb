@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<div class="main_container">
+  <div class="image_container">
+    <%= image_tag("#{@work.title}.png", :alt => "#{@work.title}", :class => 'magnify') %>
+  </div>
+  <div class="image_summary">  <!-- Stylle  Border -->
+    <h3><%= @work.title %></h3>
+    <p>
+      <b>Artist:</b>
+      <% a = Artist.find (@work.artist_id)%>
+	  <%= a.first_name %> <%= a.last_name %>
+    </p>
+    <p>
+      <b>Medium:</b>
+      <%= @work.medium %>
+    </p>
+    <p>
+      <b>Date added:</b>
+      <%= @work.date_acquired %>
+    </p>
+    <p>
+      <b>Description:</b>
+      This is an example summary for this particular piece of artwork and all of its associated artworks.  Let's see
+      if the content of this summary gets cut off by the border dimensions of this div element.
+    </p>
+    <br/>
+    <h4>Price: $<%= @work.asking_price %></h4>
+    <%= link_to 'Back to gallery', gallery_path, :class => 'btn' %>
+  </div>
+</div>

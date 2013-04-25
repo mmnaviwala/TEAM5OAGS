@@ -1,0 +1,35 @@
+
+
+<%= form_for(@transaction) do |f| %>
+  <% if @transaction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+      <% @transaction.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="span6 offset3">
+	  <div class="field">
+		  <p>Customer</p>
+		<%= f.collection_select :customer_id, Customer.find(:all), 			:id, :first_name, :prompt => "Please Select" %>  
+
+	  </div>
+	  <div class="field">
+		  <p>Work</p>
+	    <%= f.collection_select :work_id, Work.find(:all), 			:id, :title, :prompt => "Please Select" %>  
+	  </div>
+	  <div class="field">
+	    <%= f.label :sales_price %><br />
+	    <%= f.text_field :sales_price %>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit "Process Transaction", class: "btn btn-large btn-primary" %>
+	  </div>
+  </div>
+</div>
+<% end %>

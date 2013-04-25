@@ -1,0 +1,74 @@
+
+
+<%= form_for(@cso) do |f| %>
+  <% if @cso.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cso.errors.count, "error") %> prohibited this cso from being saved:</h2>
+
+      <ul>
+      <% @cso.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="span6 offset3">
+	  <div class="field">
+	    <%= f.label :username %><br />
+	    <%= f.text_field :username %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :email %><br />
+	    <%= f.text_field :email %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :first_name %><br />
+	    <%= f.text_field :first_name %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :last_name %><br />
+	    <%= f.text_field :last_name %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :street %><br />
+	    <%= f.text_field :street %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :city %><br />
+	    <%= f.text_field :city %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :state %><br />
+	    <%= f.text_field :state %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :zip %><br />
+	    <%= f.text_field :zip %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :country %><br />
+	    <%= f.text_field :country %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :area_code %><br />
+	    <%= f.telephone_field :area_code %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :phone_number %><br />
+	    <%= f.telephone_field :phone_number %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :password %><br />
+	    <%= f.password_field :password %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :password_confirmation %><br />
+	    <%= f.password_field :password_confirmation %>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit "Create Account", class: "btn btn-large btn-primary" %>
+	  </div>
+  </div>
+</div>
+<% end %>

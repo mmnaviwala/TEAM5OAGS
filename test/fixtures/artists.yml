@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date_of_birth: 2013-04-20
+  date_deceased: 2013-04-20
+
+two:
+  date_of_birth: 2013-04-20
+  date_deceased: 2013-04-20

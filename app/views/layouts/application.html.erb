@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+	  
+	  <%= favicon_link_tag "/favicon.png" %>
+
+	  
+  	<!--start of Offerchat js code-->
+  	<script type='text/javascript'>var ofc_key = 'fe30902cdf7427ef0159fdf27915d352';(function(){  var oc = document.createElement('script'); oc.type = 'text/javascript'; oc.async = true;  oc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.offerchat.com/offerchat_widget.min.js?r='+ Math.random();  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(oc, s);}());</script>
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.magnifier.js">
+
+        /***********************************************
+         * jQuery Image Magnify- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+         * This notice MUST stay intact for legal use
+         * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+         ***********************************************/
+
+    </script>
+    <!--end of Offerchat js code-->
+	
+    <title><%= full_title(yield(:title)) %></title>
+	
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>    
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+    <div class="container">
+		<% flash.each do |key, value| %>
+			<div class="alert alert-<%= key %>"><%= value %></div>
+	    <% end %>
+      <%= yield %>
+    </div>
+  <%= render 'layouts/footer' %></br>
+  <%# debug(params) if Rails.env.development? %>
+  </body>
+</html>

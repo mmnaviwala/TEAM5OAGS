@@ -1,0 +1,43 @@
+
+<h1>Listing dbas</h1>
+
+<table class = "table table-bordered table-striped">
+  <tr>
+    <th>Username</th>
+    <th>Email</th>
+    <th>First Name</th>
+	<th>Last Name</th>
+	<th>Street</th>
+	<th>City</th>
+	<th>State</th>
+	<th>Zip</th>
+	<th>Country</th>
+	<th>Phone Number</th>
+	<th>Show</th>
+	<th>Edit</th>
+	<th>Destroy</th>
+  </tr>
+
+<% @dbas.each do |dba| %>
+  <tr>
+	<td><%= dba.username %></td>
+	<td><%= dba.email %></td> 
+	<td><%= dba.first_name %></td>     
+	<td><%= dba.last_name %></td>  
+	<td><%= dba.street %></td>  
+	<td><%= dba.city %></td>
+	<td><%= dba.state %></td>    
+	<td><%= dba.zip %></td>  
+	<td><%= dba.country %></td>  
+	<td>(<%= dba.area_code %>) <%= dba.phone_number %></td>  
+	 	
+    <td><%= link_to 'Show', dba %></td>
+    <td><%= link_to 'Edit', edit_dba_path(dba) %></td>
+    <td><%= link_to 'Destroy', dba, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dba', new_dba_path %>

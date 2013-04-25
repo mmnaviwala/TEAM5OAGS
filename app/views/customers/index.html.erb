@@ -1,0 +1,49 @@
+
+<h1>Customers List</h1>
+
+<table class = "table table-bordered table-striped">
+  <tr>
+	<th>Username</th>
+	<th>Email</th>
+	<th>First Name</th>
+  	<th>Last Name</th>
+  	<th>Street</th>
+  	<th>City</th>
+  	<th>State</th>
+  	<th>Zip</th>
+  	<th>Country</th>
+  	<th>Phone Number</th>
+	
+	
+	<%if is_dba?%>
+		<th>Show</th>
+		<th>Edit</th>
+		<th>Destroy</th>
+	<% end %>
+
+  </tr>
+
+<% @customers.each do |customer| %>
+  <tr>
+  	<td><%= customer.username %></td>
+  	<td><%= customer.email %></td> 
+  	<td><%= customer.first_name %></td>     
+  	<td><%= customer.last_name %></td>  
+  	<td><%= customer.street %></td>  
+  	<td><%= customer.city %></td>
+  	<td><%= customer.state %></td>    
+  	<td><%= customer.zip %></td>  
+  	<td><%= customer.country %></td>  
+  	<td>(<%= customer.area_code %>) <%= customer.phone_number %></td>
+	<%if is_dba?%>
+	    <td><%= link_to 'Show', customer %></td>
+	    <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+	    <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		<% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Customer', new_customer_path %>
