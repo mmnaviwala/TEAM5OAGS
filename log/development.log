@@ -346,3 +346,1004 @@ Migrating to CreateOwners (20130420174145)
 Migrating to AddDateOfLifeBirth (20130423202941)
   [1m[35m (0.0ms)[0m  select sqlite_version(*)
   [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-25 11:11:12 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (12.0ms)
+Compiled artists.css  (53ms)  (pid 9908)
+Compiled bootstrap-responsive.css  (0ms)  (pid 9908)
+Compiled bootstrap-responsive.min.css  (0ms)  (pid 9908)
+Compiled bootstrap.css  (1ms)  (pid 9908)
+Compiled bootstrap.min.css  (0ms)  (pid 9908)
+Compiled csos.css  (2ms)  (pid 9908)
+Compiled custom.css  (1861ms)  (pid 9908)
+Compiled customers.css  (1ms)  (pid 9908)
+Compiled dbas.css  (1ms)  (pid 9908)
+Compiled employees.css  (3ms)  (pid 9908)
+Compiled owners.css  (1ms)  (pid 9908)
+Compiled reports.css  (3ms)  (pid 9908)
+Compiled scaffolds.css  (14ms)  (pid 9908)
+Compiled sessions.css  (2ms)  (pid 9908)
+Compiled static_pages.css  (2ms)  (pid 9908)
+Compiled testimonials.css  (10ms)  (pid 9908)
+Compiled transactions.css  (4ms)  (pid 9908)
+Compiled users.css  (1ms)  (pid 9908)
+Compiled works.css  (1ms)  (pid 9908)
+Compiled application.css  (2670ms)  (pid 9908)
+Compiled jquery.js  (3ms)  (pid 9908)
+Compiled jquery_ujs.js  (1ms)  (pid 9908)
+Compiled bootstrap-transition.js  (0ms)  (pid 9908)
+Compiled bootstrap-affix.js  (0ms)  (pid 9908)
+Compiled bootstrap-alert.js  (0ms)  (pid 9908)
+Compiled bootstrap-button.js  (1ms)  (pid 9908)
+Compiled bootstrap-carousel.js  (0ms)  (pid 9908)
+Compiled bootstrap-collapse.js  (0ms)  (pid 9908)
+Compiled bootstrap-dropdown.js  (0ms)  (pid 9908)
+Compiled bootstrap-modal.js  (1ms)  (pid 9908)
+Compiled bootstrap-scrollspy.js  (0ms)  (pid 9908)
+Compiled bootstrap-tab.js  (0ms)  (pid 9908)
+Compiled bootstrap-tooltip.js  (0ms)  (pid 9908)
+Compiled bootstrap-popover.js  (0ms)  (pid 9908)
+Compiled bootstrap-typeahead.js  (1ms)  (pid 9908)
+Compiled bootstrap.js  (543ms)  (pid 9908)
+Compiled artists.js  (1670ms)  (pid 9908)
+Compiled csos.js  (211ms)  (pid 9908)
+Compiled customers.js  (188ms)  (pid 9908)
+Compiled dbas.js  (180ms)  (pid 9908)
+Compiled employees.js  (201ms)  (pid 9908)
+Compiled jquery.imageWarp.js  (0ms)  (pid 9908)
+Compiled jquery.magnifier.js  (1ms)  (pid 9908)
+Compiled owners.js  (210ms)  (pid 9908)
+Compiled reports.js  (202ms)  (pid 9908)
+Compiled sessions.js  (185ms)  (pid 9908)
+Compiled static_pages.js  (207ms)  (pid 9908)
+Compiled testimonials.js  (214ms)  (pid 9908)
+Compiled transactions.js  (252ms)  (pid 9908)
+Compiled users.js  (280ms)  (pid 9908)
+Compiled works.js  (242ms)  (pid 9908)
+Compiled application.js  (5613ms)  (pid 9908)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1
+  Rendered layouts/_header.html.erb (131.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 8731ms (Views: 8704.5ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/assets/artists.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:21 -0500
+Served asset /artists.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:21 -0500
+Served asset /bootstrap.min.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:21 -0500
+Served asset /bootstrap-responsive.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:21 -0500
+Served asset /application.css - 304 Not Modified (67ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /bootstrap.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/csos.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /csos.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /customers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/dbas.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /dbas.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/employees.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /employees.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/owners.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /owners.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /reports.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /sessions.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /static_pages.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/testimonials.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /testimonials.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/transactions.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /transactions.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /users.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/works.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /works.css - 304 Not Modified (4ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/bootstrap-responsive.css" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap-responsive.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/custom.css" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/custom.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/jquery.magnifier.js" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/jquery.magnifier.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:22 -0500
+Served asset /jquery.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /bootstrap.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/artists.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /artists.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/csos.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /csos.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /customers.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/dbas.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /dbas.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /employees.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.imageWarp.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /jquery.imageWarp.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.magnifier.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /jquery.magnifier.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/owners.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /owners.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /reports.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /sessions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /static_pages.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/testimonials.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /testimonials.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/transactions.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /transactions.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /users.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /works.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:23 -0500
+Served asset /application.js - 304 Not Modified (58ms)
+
+
+Started GET "/assets/picasso1.jpg" for 127.0.0.1 at 2013-04-25 11:11:24 -0500
+Served asset /picasso1.jpg - 304 Not Modified (43ms)
+
+
+Started GET "/assets/davinci1.jpg" for 127.0.0.1 at 2013-04-25 11:11:24 -0500
+Served asset /davinci1.jpg - 304 Not Modified (18ms)
+
+
+Started GET "/assets/dali1.jpg" for 127.0.0.1 at 2013-04-25 11:11:24 -0500
+Served asset /dali1.jpg - 304 Not Modified (26ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2013-04-25 11:11:25 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (344.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'Cdey8iYBYZ9zwwX_2zB02g' LIMIT 1
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 434ms (Views: 433.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/artists.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /artists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/csos.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /csos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dbas.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /dbas.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/employees.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /employees.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/owners.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /owners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testimonials.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /testimonials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transactions.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/works.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /works.css - 304 Not Modified (0ms)
+
+
+Started GET "/jquery.magnifier.js" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+
+ActionController::RoutingError (No route matches [GET] "/jquery.magnifier.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/artists.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /artists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/csos.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:26 -0500
+Served asset /csos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dbas.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /dbas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /employees.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.imageWarp.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /jquery.imageWarp.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.magnifier.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /jquery.magnifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/owners.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /owners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testimonials.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /testimonials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transactions.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:27 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-04-25 11:11:34 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R9UhuSknN8WmUYRsZ1jpAIfUBz1QGjWpdvQS1nm3Qao=", "session"=>{"username"=>"dba", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'dba' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-25 11:11:34 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'QGMVnOnX9ZoDSkUE7Xvftw' LIMIT 1
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/artists.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /artists.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/csos.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /csos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dbas.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /dbas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/employees.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /employees.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/owners.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /owners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /reports.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testimonials.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /testimonials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transactions.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/works.css?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /works.css - 304 Not Modified (0ms)
+
+
+Started GET "/bootstrap.css" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/bootstrap-responsive.css" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+
+ActionController::RoutingError (No route matches [GET] "/bootstrap-responsive.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/custom.css" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+
+ActionController::RoutingError (No route matches [GET] "/custom.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/jquery.magnifier.js" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+
+ActionController::RoutingError (No route matches [GET] "/jquery.magnifier.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap-typeahead.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/artists.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /artists.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/csos.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /csos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dbas.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:35 -0500
+Served asset /dbas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /employees.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.imageWarp.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /jquery.imageWarp.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.magnifier.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /jquery.magnifier.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/owners.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /owners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reports.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /reports.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/testimonials.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /testimonials.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/transactions.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /works.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/picasso1.jpg" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /picasso1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/dali1.jpg" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /dali1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/davinci1.jpg" for 127.0.0.1 at 2013-04-25 11:11:36 -0500
+Served asset /davinci1.jpg - 304 Not Modified (0ms)
