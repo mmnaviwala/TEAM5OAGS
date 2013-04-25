@@ -1,24 +1,3 @@
-=====================
-About TEAM5OAGS
-=====================
-
-
-TEAM5OAGS is an art gallery website that was developed by a team of eight members for the Spring 2013 software engineering course at the University of Houston. This website has been designed and developed in accordance with the REST and MVC architecture patterns as well as software engineering principles. The team utilized Ruby on Rails and MySQL as the front-end and back-end technologies for the website, respectively.
-
-Members of the "development" team are listed below:
-
-Ryan Lee - Team Leader
-
-Christopher Cruz - SQA
-
-Muhammad Naviwala - SQA
-
-Gabriel Ohlson - DBA
-
-Joel Loucks - DBA
-
-Matthew Liang - Team Member
-
 ==================================================
 Rails Generate Commands for TEAM5OAGS' Scaffolding
 ==================================================
@@ -52,7 +31,6 @@ rails g controller static_pages home about chat testimonials gallery
 rails g controller Reports customer_artist_preference past_purchase past_purchase_artwork_location artist_works speed_of_sale
 
 rails g controller Sessions new create destroy
-
 
 
 
